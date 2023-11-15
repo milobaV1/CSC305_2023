@@ -1,4 +1,5 @@
 ///associate greetings module with this crate
+
 mod greetings;
 mod how_you_hold_data_for_operations;
 
@@ -14,8 +15,9 @@ use greetings::french;*/
 ///Alternatively, load them in one line
 //use greetings::*;
 use greetings::{english, spanish, french};
-use how_you_hold_data_for_operations::primitives;
+use how_you_hold_data_for_operations::{primitives, derived};
 use primitives::{scalar, compound};
+use derived::user_defined;
 
 
 
@@ -38,6 +40,7 @@ fn main() {
     
     //compound::compound1();
     compound::compound2();
+    user_defined::struct_main();
     
 
 }
