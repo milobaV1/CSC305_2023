@@ -211,16 +211,7 @@ impl From<&'static str> for Rect {
         Rect { length, width, name: &name }
     }
 }
-struct Circle{
-    radius: f32
-}
 
-impl Into<Circle> for Rect{
-    fn into(self) -> Circle {
-        let radius= f32::sqrt(self.area() as f32 / 3.141);
-        Circle {radius}
-    }
-}
 pub fn run2() {
     let rectangle1 = Rect::default();
     

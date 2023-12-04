@@ -40,7 +40,7 @@ fn main() {
     
     //compound::compound1();
     compound::compound2();
-    user_defined::struct_main();
+    user_defined::run();
     
 
 }

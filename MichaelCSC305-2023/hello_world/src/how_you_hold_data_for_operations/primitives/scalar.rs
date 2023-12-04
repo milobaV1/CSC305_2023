@@ -1,4 +1,4 @@
-#![allow(dead_code)]
+#![allow(dead_code)]                                                                                                                                                                                                                                                                                  
 pub fn scalar1() {
     // Variables can be type annotated.
     let logical: bool = true;
