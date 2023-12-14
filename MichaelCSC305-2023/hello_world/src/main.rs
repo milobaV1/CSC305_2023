@@ -17,19 +17,19 @@ use greetings::french;*/
 use greetings::{english, spanish, french};
 use how_you_hold_data_for_operations::{primitives, derived};
 use primitives::{scalar, compound};
-use derived::user_defined;
+use derived::{user_defined,pointers,error};
 
 
 
 fn main() {
     
 
-    println!("Hello, world!");
-    println!(
-        "My first greeting is '{}' and the second is '{}'",
-        english::default_greeting(),
-        english::default_greeting2()
-    );
+   // println!("Hello, world!");
+    // println!(
+    //     "My first greeting is '{}' and the second is '{}'",
+    //     english::default_greeting(),
+    //     english::default_greeting2()
+    // );
 
     // println!("{}", english::default_greeting());
     // println!("{}", spanish::default_greeting());
@@ -39,8 +39,13 @@ fn main() {
     // scalar::scalar1();
     
     //compound::compound1();
-    compound::compound2();
-    user_defined::run();
+    //compound::compound2();
+    //user_defined::run();
+    //pointers::run();
+   // pointers::run2();
+
+    error::run();
+
     
 
 }
