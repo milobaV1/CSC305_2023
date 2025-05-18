@@ -7,3 +7,5 @@ edition = "2021"
 
 [dependencies]
 hello_world_lib = {path = "hello_world_lib"}
+rect_shape = { path = "../rect_shape" }
+rect_shape_derive = { path ="../rect_shape/rect_shape_derive" }

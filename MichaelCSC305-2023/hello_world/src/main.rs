@@ -2,6 +2,7 @@
 
 mod greetings;
 mod how_you_hold_data_for_operations;
+pub mod must_know_2;
 
 extern crate hello_world_lib;
 
@@ -44,8 +45,9 @@ fn main() {
     //pointers::run();
    // pointers::run2();
 
-    error::run();
+    //error::run();
 
+    must_know_2::run3();
     
 
 }

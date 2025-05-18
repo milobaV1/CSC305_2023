@@ -96,7 +96,7 @@ pub fn run() {
 //Let's work on user-defined traits. Traits enable us achieve polymorphism.
 //We are designing Shape below for the purpose of 
 //specifying all expected functions and methods in any struct that implements Shape.
-trait Shape {
+pub trait Shape {
     fn new(length: i32, width: i32, name: &'static str) -> Self;
     fn area(&self) -> i32;
     fn set_length(&mut self, length: i32);
@@ -112,10 +112,10 @@ trait Shape {
 
 ///Use Default to specify the availability of default instance creation without values passed for property
 #[derive(Default, Debug, Clone)]
-struct Rect {
-    length: i32,
-    width: i32,
-    name: &'static str,
+pub struct Rect {
+    pub length: i32,
+    pub width: i32,
+    pub name: &'static str,
 }
 
 impl Rect {
